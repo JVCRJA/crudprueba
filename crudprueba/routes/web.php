@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\PasanteController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,3 +16,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+/*Route::get('/index', function () {
+    return view('pasantes.index');
+});
+Route::get('/create', [PasanteController::class, 'create']);
+*/
+Route::resource('pasantes',PasanteController::class);

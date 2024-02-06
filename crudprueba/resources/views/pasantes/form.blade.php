@@ -1,0 +1,1 @@
+formulario datos en comnun con edit y form
